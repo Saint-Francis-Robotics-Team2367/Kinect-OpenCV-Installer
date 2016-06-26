@@ -3,7 +3,7 @@
 cwd=$(pwd)
 sudo apt-get update
 sudo apt-get -q -y install git cmake build-essential freeglut3-dev libxmu-dev libxi-dev libopencv-dev libudev-dev wget
-sudo apt-get -y remove libusb-1.0-0-dev libusb-1.0-0
+sudo apt-get -y remove libusb-1.0-0-dev
 cd /tmp
 
 wget http://sourceforge.net/projects/libusb/files/libusb-1.0/libusb-1.0.18/libusb-1.0.18.tar.bz2
