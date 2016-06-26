@@ -25,6 +25,12 @@ cmake .. -DBUILD_CV=ON
 make
 sudo make install
 
+cd /tmp
+touch usr-local-libs.conf
+printf "/usr/local/bin\n" > usr-local-libs.conf
+sudo mv usr-local-libs.conf /etc/ld.so.conf.d/usr-local-libs.conf
+sudo /sbin/ldconfig -v
+
 cd $cwd
 git clone https://github.com/Saint-Francis-Robotics-Team2367/GoalDetection.git
 cd GoalDetection/pi/kinect/c
